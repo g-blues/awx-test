@@ -7,10 +7,10 @@
   - name: ping test
     command: "ping 192.168.0.1 -c 3"
     register: result
-  - name: set_fact
-    set_fact:
-      test_fact: "TESTTEST"
+
   - name: debug
     debug:
       msg: "{{ result.stdout }}"
-      
+  - name: set_fact
+    set_fact:
+      test_fact: "TESTTEST"
