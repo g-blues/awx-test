@@ -1,5 +1,5 @@
 ---
-- hosts: ubuntu
+- hosts: server
 #  gather_facts: false
 #  connection: local
   
